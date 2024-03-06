@@ -57,12 +57,12 @@ export default function Home({blog}) {
     </section>
 
     <section id="about">
-        <h2 className="primary-ttl fadeIn">About<span>プロフィール</span></h2>
+        <h2 className="primary-ttl">About<span>プロフィール</span></h2>
         <div className="about-container">
         <div className="about-picture">
           <Image src={personImg} alt="プロフィール画像" />
         </div>
-            <div className="about-content fadeIn">
+            <div className="about-content">
                 <h2>WEBを通じて<br />
                     新たな繋がりを作る。</h2>
                 <p>はじめまして、岩本謙吾です。<br />
@@ -123,10 +123,12 @@ export default function Home({blog}) {
               {blog.map(({id, title, publishDate, category, eyecatch}) => (
                 <li key={blog.id}>
                   <Link href={`blog/${id}`}>
-                    <img 
-                      src={eyecatch.url}
-                      alt="eycatch" 
-                    />
+                    <div className="blogImgWrapper">
+                      <img 
+                        src={eyecatch.url}
+                        alt="eycatch" 
+                      />
+                    </div>
                     <div className="blog-content-right">
                       <ConvertDate convertDate={publishDate}></ConvertDate>
                       <span>{category && category.name}</span>

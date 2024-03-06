@@ -566,7 +566,7 @@ footer p {
         display: block;
     }
 
-    .about-container picture {
+    .about-container .about-picture {
         width: 100%;
         padding-right: 15%;
     }
@@ -585,6 +585,11 @@ footer p {
     }
 
     .works-container {
+        width: 92%;
+    }
+
+    /* ===== Blog ====== */
+    .blog-container {
         width: 92%;
     }
 
@@ -700,6 +705,23 @@ footer p {
 
     .works-container .work {
         width: 100%;
+    }
+
+    /* ===== ブログの表示をアイキャッチなしにする ====== */
+    #blog .blogImgWrapper {
+      display: none;
+    }
+
+    .blog-container li {
+      margin-bottom: 1rem;
+    }
+
+    .blog-container .blog-content-right {
+      margin-left: 0;
+    }
+
+    .blog-container .blog-content-right p {
+      font-size: 1.6rem;
     }
 
     /* ===== Footer ====== */
