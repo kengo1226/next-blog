@@ -14,13 +14,14 @@ const notoSansJP = Noto_Sans_JP({
     display: 'swap', 
 });
 
-// const [open, setOpen] = useState(false);
-
-// const toggleFunction = () => {
-//     setOpen((prevState) => !prevState);
-// };
-
 export default function Layout({ children}) {
+
+    const [active, setActive] = useState(false);
+
+    const toggleFunction = () => {
+        setActive(!active);
+    };
+
     return(
         <>
             <Head>
@@ -33,7 +34,7 @@ export default function Layout({ children}) {
                 <meta name="og:title" content={siteTitle} />
                 <meta name="twitter:card" content="summary_large_image" />
             </Head>
-            <header className={`${notoSansJP.className} header`}>
+            <header className={`${active ? "show" : ""} ${notoSansJP.className} header`}>
                 <div className="header-container">
                     <Link href="/">
                         <div className="logo">
@@ -59,7 +60,7 @@ export default function Layout({ children}) {
                             </li>
                         </ul>
                     </nav>
-                    <div className="menu-btn">
+                    <div className="menu-btn" onClick={toggleFunction}>
                         <span></span>
                         <span></span>
                         <span></span>
