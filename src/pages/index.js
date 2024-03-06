@@ -9,6 +9,7 @@ import bgTop from "../../public/img/bg-top.jpg"
 import personImg from "../../public/img/person-img.jpg"
 import workImg1 from "../../public/img/works1.jpg"
 import workImg2 from "../../public/img/works2.jpg"
+import workImg3 from "../../public/img/works3.jpg"
 import {client} from "../lib/client";
 import ConvertDate from "../components/convertdate";
 
@@ -95,11 +96,11 @@ export default function Home({blog}) {
             </div>
             <div className="work fadeIn">
                 <div className="work-img">
-                    <Image src={workImg1} />
+                    <Image src={workImg3} />
                 </div>
                 <div className="work-sub">
-                    <p className="work-ttl">台湾観光局WEBサイト</p>
-                    <p className="work-desc">WEBサイト制作<span>｜</span>クライアント</p>
+                    <p className="work-ttl">ポートフォリオサイト</p>
+                    <p className="work-desc">WEBサイト制作<span>｜</span>自主制作</p>
                 </div>
             </div>
             <div className="work fadeIn">
