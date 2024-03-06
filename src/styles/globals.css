@@ -293,6 +293,7 @@ nav ul li a {
   width: 200px;
   height: 140px;
   object-fit: cover;
+  transition: all 0.3s;
 }
 
 .blog-container a {
@@ -343,6 +344,14 @@ nav ul li a {
 .blog-container a:hover p::after {
   transform: scale(1, 1);    
   transform-origin: left top; 
+}
+
+.blog-container .blogImgWrapper {
+  transition: all 0.2s;
+}
+
+.blog-container a:hover .blogImgWrapper {
+  opacity: 0.8;
 }
 
 #blog .primary-btn {

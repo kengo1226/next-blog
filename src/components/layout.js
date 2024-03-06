@@ -6,7 +6,7 @@ import logo from "../../public/img/logo.svg";
 import { Noto_Sans_JP } from "next/font/google";
 
 const name = 'Aozora BLOG';
-export const siteTitle = "サイトタイトル";
+export const siteTitle = "岩本謙吾ポートフォリオ";
 
 const notoSansJP = Noto_Sans_JP({ 
     weight: '400',
@@ -24,10 +24,11 @@ export default function Layout({ children}) {
     return(
         <>
             <Head>
+                <title>{siteTitle}</title>
                 <link rel="icon" href="/favicon.ico" />
                 <meta
                 name="description"
-                content="デスクリプションです。"
+                content="都内のWEB制作会社でフロントエンドを担当している岩本謙吾です。デザインとコーディングが好きです。"
                 />
                 <meta name="og:title" content={siteTitle} />
                 <meta name="twitter:card" content="summary_large_image" />
