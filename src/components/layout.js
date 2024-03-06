@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
@@ -14,7 +14,13 @@ const notoSansJP = Noto_Sans_JP({
     display: 'swap', 
 });
 
-export default function Layout({ children }) {
+// const [open, setOpen] = useState(false);
+
+// const toggleFunction = () => {
+//     setOpen((prevState) => !prevState);
+// };
+
+export default function Layout({ children}) {
     return(
         <>
             <Head>
@@ -26,7 +32,7 @@ export default function Layout({ children }) {
                 <meta name="og:title" content={siteTitle} />
                 <meta name="twitter:card" content="summary_large_image" />
             </Head>
-            <header className="header">
+            <header className={`${notoSansJP.className} header`}>
                 <div className="header-container">
                     <Link href="/">
                         <div className="logo">
@@ -36,10 +42,16 @@ export default function Layout({ children }) {
                     <nav>
                         <ul>
                             <li>
+                                <Link href="/">Home</Link>
+                            </li>
+                            <li>
                                 <Link href="/about">About</Link>
                             </li>
                             <li>
                                 <Link href="/works">Works</Link>
+                            </li>
+                            <li>
+                                <Link href="/blog">Blog</Link>
                             </li>
                             <li>
                                 <Link href="/contact">Contact</Link>
@@ -66,10 +78,16 @@ export default function Layout({ children }) {
             <footer className={notoSansJP.className}>
                 <ul>
                     <li>
+                        <Link href="/">Home</Link>
+                    </li>
+                    <li>
                         <Link href="/about">About</Link>
                     </li>
                     <li>
                         <Link href="/works">Works</Link>
+                    </li>
+                    <li>
+                        <Link href="/blog">Blog</Link>
                     </li>
                     <li>
                         <Link href="/contact">Contact</Link>

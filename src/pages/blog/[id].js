@@ -1,6 +1,7 @@
 import { client } from "../../lib/client";
 import Layout from "../../components/layout";
 import styles from "../../styles/blog.module.css";
+import ConvertDate from "@/components/convertdate";
 
 
 export default function BlogId({ blog }) {
@@ -11,8 +12,9 @@ export default function BlogId({ blog }) {
                 <p>ブログ</p>
             </div>
             <div className={styles.blogContainer}>
+                <ConvertDate convertDate={blog.publishDate}></ConvertDate>
+                <span>{blog.category && blog.category.name}</span>
                 <h1 className={styles.heading}>{blog.title}</h1>
-                <p>{blog.publishedAt}</p>
                 <div className={styles.blogContent}>
                     <div
                         dangerouslySetInnerHTML={{

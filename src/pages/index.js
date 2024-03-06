@@ -118,22 +118,26 @@ export default function Home({blog}) {
     <section id="blog">
         <h2 className="primary-ttl fadeIn">Blog<span>ブログ</span></h2>
         <div className="blog-container">
-          <div>
+          <div className="blog-inner">
             <ul>
-              {blog.map(({id, title, publishDate, eyecatch}) => (
+              {blog.map(({id, title, publishDate, category, eyecatch}) => (
                 <li key={blog.id}>
                   <Link href={`blog/${id}`}>
-                  <ConvertDate convertDate={publishDate}></ConvertDate>
-                  <p>{title}</p>
-                  <img 
-                    src={eyecatch.url} 
-                    alt="eycatch" 
-                  />
+                    <img 
+                      src={eyecatch.url}
+                      alt="eycatch" 
+                    />
+                    <div className="blog-content-right">
+                      <ConvertDate convertDate={publishDate}></ConvertDate>
+                      <span>{category && category.name}</span>
+                      <p>{title}</p>
+                    </div>
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
+          <Link href="/blog" className="primary-btn">もっと見る</Link>
         </div>
     </section>
 
