@@ -28,7 +28,7 @@ export default function Layout({ children}) {
     const [isVisible, setIsVisible] = useState(false);
 
     const toggleVisibility = () => {
-        window.scrollY > 550 ? setIsVisible(true) : setIsVisible(false);
+        window.scrollY > 570 ? setIsVisible(true) : setIsVisible(false);
     };
 
     useEffect(() => {
