@@ -1,0 +1,52 @@
+.profile {
+    margin-top: 9rem;
+}
+
+.profile .profileContent h3 {
+    font-size: 2.6rem;
+    font-weight: bold;
+    margin-bottom: 2.2rem;
+}
+
+.profile .profileContent h3 span {
+    margin-left: 1.6rem;
+    font-size: 2rem;
+}
+
+.profile .profileContent p {
+    font-size: 1.5rem;
+    line-height: 2;
+}
+
+.profile .service {
+    margin-top: 8rem;
+}
+
+.service .serviceRow {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #d1d1d1;
+    padding: 4.2rem 2rem 4.2rem 2rem;
+}
+
+.serviceNumber {
+    font-family: "Noto Serif JP", serif;
+    font-weight: normal;
+    font-size: 9rem;
+    width: 12%;
+    text-align: center;
+}
+
+.serviceContent {
+    width: 81%;
+}
+
+.serviceContent h3 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+}
+
+.serviceContent p {
+    font-size: 1.5rem;
+    line-height: 2;
+}

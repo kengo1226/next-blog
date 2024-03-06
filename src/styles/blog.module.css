@@ -1,0 +1,57 @@
+.blogHeader {
+    height: 20rem;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blogHeader p {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.blogContainer {
+    width: 96%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 5rem 0;
+}
+
+.heading {
+    font-size: 3rem;
+}
+
+.blogContent {
+    padding-top: 5rem;
+}
+
+.blogContent h2 {
+    font-size: 2.6rem;
+    font-weight: 800;
+    margin: 3.5rem 0 2.6rem;
+    padding-bottom: 1.2rem;
+    background-image: repeating-linear-gradient(90deg, #b8b8b8 0, #b8b8b8 2px, rgba(0,0,0,0) 2px, rgba(0,0,0,0) 4px);
+	background-size: 4px 4px;
+	background-repeat: repeat-x;
+	background-position: center bottom;
+}
+
+.blogContent h3 {
+    font-size: 2rem;
+    margin: 3.5rem 0 2.6rem;
+    padding-left: 1.2rem;
+    border-left: 3px solid #797979;
+}
+
+.blogContent h4 {
+    font-size: 1.8rem;
+    margin: 3.5rem 0 2.6rem;
+}
+
+.blogContent p {
+    font-size: 1.6rem;
+    line-height: 2;
+    margin-bottom: 1.8rem;
+}

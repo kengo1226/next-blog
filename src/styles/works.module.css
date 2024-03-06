@@ -1,0 +1,36 @@
+.production {
+    margin-top: 9rem;
+}
+
+.productionContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.productionContainer .work {
+    width: 47%;
+    margin-bottom: 5rem;
+}
+
+.productionContainer .work .workImg {
+    width: 100%;
+    height: auto;
+}
+
+.productionContainer .work .workImg img {
+    width: 100%;
+    height: auto;
+}
+
+/* ======== スマホ ======== */
+@media screen and (max-width: 768px) {
+    .productionContainer {
+        display: block;
+    }
+
+    .productionContainer .work {
+        width: 100%;
+        margin-bottom: 5rem;
+    }
+}
