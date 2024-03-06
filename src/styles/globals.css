@@ -442,6 +442,22 @@ footer p {
     padding: 3rem 0;
 }
 
+/* ========= トップに戻るボタン ========= */
+.topBtn {
+  position: fixed;
+  opacity: 0;
+  width: 55px;
+  right: 5rem;
+  bottom: 5rem;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s;
+}
+
+.topBtn.show {
+  opacity: 1;
+}
+
 /* ========= 下層ページ共通CSS ========= */
 .sub-mv .copy-vertical span {
   background: #fff;
@@ -632,6 +648,15 @@ footer p {
     footer ul li {
         font-size: 1.5rem;
         margin-bottom: 2rem;
+    }
+
+    .topBtn {
+      width: 5rem;
+      right: 4%;
+      bottom: 4%;
+      cursor: pointer;
+      z-index: 10;
+      transition: all 0.3s;
     }
 
 }

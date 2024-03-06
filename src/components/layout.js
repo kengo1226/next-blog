@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import logo from "../../public/img/logo.svg";
+import topImg from "../../public/img/top-img.svg";
 import { Noto_Sans_JP } from "next/font/google";
 
 const name = 'Aozora BLOG';
@@ -18,8 +19,29 @@ export default function Layout({ children}) {
 
     const [active, setActive] = useState(false);
 
+    // ハンバーガーメニュー
     const toggleFunction = () => {
         setActive(!active);
+    };
+
+    // スクロールしたらトップボタンを表示する
+    const [isVisible, setIsVisible] = useState(false);
+
+    const toggleVisibility = () => {
+        window.scrollY > 550 ? setIsVisible(true) : setIsVisible(false);
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', toggleVisibility);
+        return () => window.removeEventListener("scroll", toggleVisibility);
+    }, [])
+
+    // トップに戻る
+    const backTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
     };
 
     return(
@@ -97,6 +119,9 @@ export default function Layout({ children}) {
                 </ul>
                 <p>© 2024 Kengo Iwamoto</p>
             </footer>
+            <div className={`${isVisible ? "show" : "" } topBtn`} onClick={backTop}>
+                <Image src={topImg} />
+            </div>
         </>
     )
 }
