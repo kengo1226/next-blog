@@ -12,6 +12,7 @@ import workImg2 from "../../public/img/works2.jpg"
 import workImg3 from "../../public/img/works3.jpg"
 import {client} from "../lib/client";
 import ConvertDate from "../components/convertdate";
+import { ScrollCom } from "../components/ScrollCom";
 
 const notoSansJP = Noto_Sans_JP({ 
   weight: '400',
@@ -43,7 +44,12 @@ export default function Home({blog}) {
     <section id="mv">
         <div className="main-visual">
         <div className="picture">
-          <Image src={bgTop} alt="トップ画像" />
+          <Image 
+            src={bgTop} 
+            alt="トップ画像" 
+            width={1920}
+            height={1200}
+          />
         </div>
             <p className="copy-vertical">
                 <span>岩本謙吾です。</span>
@@ -58,17 +64,28 @@ export default function Home({blog}) {
     </section>
 
     <section id="about">
-        <h2 className="primary-ttl">About<span>プロフィール</span></h2>
+    <ScrollCom>
+      <h2 className="primary-ttl">About<span>プロフィール</span></h2>
+    </ScrollCom>
         <div className="about-container">
-        <div className="about-picture">
-          <Image src={personImg} alt="プロフィール画像" />
-        </div>
+          <div className="about-picture">
+            <ScrollCom>
+              <Image 
+                src={personImg} 
+                alt="プロフィール画像"
+                width={1920}
+                height={1200} 
+              />
+            </ScrollCom>
+          </div>
             <div className="about-content">
+              <ScrollCom>
                 <h2>WEBを通じて<br />
                     新たな繋がりを作る。</h2>
                 <p>はじめまして、岩本謙吾です。<br />
                     WEB制作との出会いは19歳の頃、ブログでのCSS装飾がきっかけでした。独学でHTML、CSSを学び、その後はセブ島のIT留学でWEBデザインコースを受講しました。IT留学後は都内のWEB制作会社でフロントエンドエンジニアとしてお仕事をしています。コーディングもデザインもどっちも好き。毎日新たなコーディング技術やデザインから刺激を受けながら生活しています。</p>
                 <Link href="/about" className="primary-btn">プロフィール</Link>
+              </ScrollCom>
             </div>
         </div>
     </section>

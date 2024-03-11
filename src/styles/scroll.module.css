@@ -1,0 +1,54 @@
+.first {
+    width: 100%;
+    color: #fff;
+    font-size: 3rem;
+    height: 100vh;
+    background: lightcoral;
+}
+
+.scrollWrapper {
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.active {
+    opacity: 1;
+}
+
+.third {
+    width: 100%;
+    color: #fff;
+    font-size: 3rem;
+    height: 100vh;
+    background: lightseagreen;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.third.active {
+    opacity: 1;
+}
+
+.fourth {
+    width: 100%;
+    color: #fff;
+    font-size: 3rem;
+    height: 100vh;
+    background: lightblue;
+}
+
+.point {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    opacity: 1;
+    transition: all 0.3s;
+}
+
+.show {
+    opacity: 1;
+    background: red;
+}

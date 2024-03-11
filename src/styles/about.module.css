@@ -50,3 +50,18 @@
     font-size: 1.5rem;
     line-height: 2;
 }
+
+@media screen and (max-width: 768px) {
+    .service .serviceRow {
+        display: block;
+    }
+
+    .serviceNumber {
+        width: 100%;
+        text-align: left;
+    }
+    
+    .serviceContent {
+        width: 100%;
+    }
+}

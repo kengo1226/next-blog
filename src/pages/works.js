@@ -9,14 +9,19 @@ import workImg1 from "../../public/img/works1.jpg"
 import workImg2 from "../../public/img/works2.jpg"
 
 function works() {
-  return (
+return (
     <>
     <Layout>
 
     <section id="mv" class="sub-mv">
         <div class="main-visual">
         <div className="picture">
-            <Image src={worksImg} alt='プロフィールトップ画像' />
+            <Image 
+                src={worksImg} 
+                alt='プロフィールトップ画像'
+                width={1920}
+                height={1200} 
+            />
         </div>
             <p class="copy-vertical">
                 <span>私について。</span>

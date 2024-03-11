@@ -6,13 +6,18 @@ import Image from "next/image";
 import aboutImg from "../../public/img/about-img.jpg"
 
 function about() {
-  return (
+return (
     <>
     <Layout>
     <section id="mv" className="sub-mv">
         <div className="main-visual">
         <div className="picture">
-            <Image src={aboutImg} alt='プロフィールトップ画像' />
+            <Image 
+                src={aboutImg} 
+                alt='プロフィールトップ画像'
+                width={1920}
+                height={1200} 
+            />
         </div>
             <p className="copy-vertical">
                 <span>私について。</span>
