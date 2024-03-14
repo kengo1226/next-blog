@@ -15,7 +15,7 @@
     transition: all 0.8s ease-in-out;
 }
 
-.scrollWrapper {
+/* .scrollWrapper {
     width: 100%;
     color: #fff;
     font-size: 5rem;
@@ -33,7 +33,7 @@
     font-size: 5rem;
     height: 100vh;
     background: rgb(26, 165, 158);
-}
+} */
 
 .active {
     opacity: 1;
