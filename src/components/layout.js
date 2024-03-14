@@ -66,19 +66,19 @@ export default function Layout({ children}) {
                     <nav>
                         <ul>
                             <li>
-                                <Link href="/">Home</Link>
+                                <Link href="/">ホーム</Link>
                             </li>
                             <li>
-                                <Link href="/about">About</Link>
+                                <Link href="/about">プロフィール</Link>
                             </li>
                             <li>
-                                <Link href="/works">Works</Link>
+                                <Link href="/works">制作実績</Link>
                             </li>
                             <li>
-                                <Link href="/blog">Blog</Link>
+                                <Link href="/blog">ブログ</Link>
                             </li>
                             <li>
-                                <Link href="/contact">Contact</Link>
+                                <Link href="/contact">お問い合わせ</Link>
                             </li>
                         </ul>
                     </nav>
@@ -102,19 +102,19 @@ export default function Layout({ children}) {
             <footer className={notoSansJP.className}>
                 <ul>
                     <li>
-                        <Link href="/">Home</Link>
+                        <Link href="/">ホーム</Link>
                     </li>
                     <li>
-                        <Link href="/about">About</Link>
+                        <Link href="/about">プロフィール</Link>
                     </li>
                     <li>
-                        <Link href="/works">Works</Link>
+                        <Link href="/works">制作実績</Link>
                     </li>
                     <li>
-                        <Link href="/blog">Blog</Link>
+                        <Link href="/blog">ブログ</Link>
                     </li>
                     <li>
-                        <Link href="/contact">Contact</Link>
+                        <Link href="/contact">お問い合わせ</Link>
                     </li>
                 </ul>
                 <p>© 2024 Kengo Iwamoto</p>
