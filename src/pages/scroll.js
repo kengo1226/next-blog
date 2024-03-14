@@ -13,17 +13,14 @@ function scroll() {
     return (
         <div id="section-wrapper">
             <div className={styles.first}>
-                Section 1
+                セクション１
             </div>
             <ScrollCom>
-                <p className={styles.second}>section 2</p>
+                <p>セクション２</p>
             </ScrollCom>
             <ScrollCom>
-                <p className={styles.third}>section 3</p>
+                <p>セクション３</p>
             </ScrollCom>
-            <div>
-                これが表示されるよ
-            </div>
         </div>
     )
 }

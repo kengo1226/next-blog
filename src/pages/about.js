@@ -33,7 +33,7 @@ return (
         <div className="container-small">
             <h2 className="primary-ttl fadeIn">About<span>プロフィール</span></h2>
             <div className={styles.profileContent}>
-                <h3>フォームの最適化<span>Textgoes Here</span></h3>
+                <h3>岩本 謙吾<span>KENGO IWAMOTO</span></h3>
                 <p>はじめまして、岩本謙吾です。<br />
                     WEB制作との出会いは19歳の頃、ブログでのCSS装飾がきっかけでした。独学でHTML、CSSを学び、その後はセブ島のIT留学でWEBデザインコースを受講しました。IT留学後は都内のWEB制作会社でフロントエンドエンジニアとしてお仕事をしています。コーディングもデザインもどっちも好き。デザインもコーディングもどっちも極めたい。<br />最近はGSAPのアニメーションが好きです。このサイトではscrollTriggerを使っています。</p>
             </div>

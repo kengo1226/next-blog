@@ -1,14 +1,38 @@
 .first {
     width: 100%;
     color: #fff;
-    font-size: 3rem;
+    font-size: 5rem;
     height: 100vh;
     background: lightcoral;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .scrollWrapper {
     opacity: 0;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.8s ease-in-out;
+}
+
+.scrollWrapper {
+    width: 100%;
+    color: #fff;
+    font-size: 5rem;
+    height: 100vh;
+    background: rgb(79, 189, 79);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scrollWrapper:last-of-type {
+    width: 100%;
+    color: #fff;
+    font-size: 5rem;
+    height: 100vh;
+    background: rgb(26, 165, 158);
 }
 
 .active {
