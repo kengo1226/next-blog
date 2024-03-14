@@ -157,7 +157,7 @@ export default function Home({blog}) {
               ))}
             </ul>
           </div>
-          <Link href="/blog" className="primary-btn">もっと見る</Link>
+          <Link href="/blog" className="primary-btn">ブログ一覧</Link>
         </div>
     </section>
 
