@@ -122,15 +122,6 @@ export default function Home({blog}) {
                     <p className="work-desc">WEBサイト制作<span>｜</span>自主制作</p>
                 </div>
             </div>
-            <div className="work fadeIn">
-                <div className="work-img">
-                    <Image src={workImg2} />
-                </div>
-                <div className="work-sub">
-                    <p className="work-ttl">タイ観光局WEBサイト</p>
-                    <p className="work-desc">WEBサイト制作<span>｜</span>クライアント</p>
-                </div>
-            </div>
         </div>
         <Link href="/works" className="primary-btn fadeIn">制作実績はこちら</Link>
     </section>

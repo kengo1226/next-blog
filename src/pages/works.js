@@ -67,15 +67,6 @@ return (
                         <p className="work-desc">WEBサイト制作<span>｜</span>自主制作</p>
                     </div>
                 </div>
-                <div className={styles.work}>
-                    <div className={styles.workImg}>
-                        <Image src={workImg2} />
-                    </div>
-                    <div className="work-sub">
-                        <p className="work-ttl">タイ観光局WEBサイト</p>
-                        <p className="work-desc">WEBサイト制作<span>｜</span>クライアント</p>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
