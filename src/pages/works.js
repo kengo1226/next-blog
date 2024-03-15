@@ -7,6 +7,9 @@ import Image from "next/image";
 import worksImg from "../../public/img/works-img.jpg"
 import workImg1 from "../../public/img/works1.jpg"
 import workImg2 from "../../public/img/works2.jpg"
+import workImg3 from "../../public/img/works3.jpg"
+import workImg4 from "../../public/img/works4.jpg"
+import workImg5 from "../../public/img/works5.jpg"
 
 function works() {
 return (
@@ -39,29 +42,29 @@ return (
             <div className={styles.productionContainer}>
                 <div className={styles.work}>
                     <div className={styles.workImg}>
-                        <Image src={workImg1} />
+                        <Image src={workImg4} />
                     </div>
                     <div className="work-sub">
-                        <p className="work-ttl">台湾観光局WEBサイト</p>
+                        <p className="work-ttl">BtoB WEBサイト</p>
+                        <p className="work-desc">WEBサイト制作<span>｜</span>架空サイト</p>
+                    </div>
+                </div>
+                <div className={styles.work}>
+                    <div className={styles.workImg}>
+                        <Image src={workImg5} />
+                    </div>
+                    <div className="work-sub">
+                        <p className="work-ttl">企業サイト</p>
                         <p className="work-desc">WEBサイト制作<span>｜</span>クライアント</p>
                     </div>
                 </div>
                 <div className={styles.work}>
                     <div className={styles.workImg}>
-                        <Image src={workImg2} />
+                        <Image src={workImg3} />
                     </div>
                     <div className="work-sub">
-                        <p className="work-ttl">タイ観光局WEBサイト</p>
-                        <p className="work-desc">WEBサイト制作<span>｜</span>クライアント</p>
-                    </div>
-                </div>
-                <div className={styles.work}>
-                    <div className={styles.workImg}>
-                        <Image src={workImg1} />
-                    </div>
-                    <div className="work-sub">
-                        <p className="work-ttl">台湾観光局WEBサイト</p>
-                        <p className="work-desc">WEBサイト制作<span>｜</span>クライアント</p>
+                        <p className="work-ttl">ポートフォリオサイト</p>
+                        <p className="work-desc">WEBサイト制作<span>｜</span>自主制作</p>
                     </div>
                 </div>
                 <div className={styles.work}>
