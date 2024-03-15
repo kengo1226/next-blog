@@ -5,7 +5,7 @@ import Layout from "../../components/layout";
 import styles from "../../styles/works.module.css";
 import Image from "next/image";
 import workImg from "../../../public/img/works3.jpg"
-import workDesign from "../../../public/img/work-design-1.jpg"
+import workDesign from "../../../public/img/work-design-3.jpg"
 
 function work3() {
     return (
@@ -18,7 +18,7 @@ function work3() {
                 <div className={styles.workWrapper}>
                     <p className={styles.workLink}>
                         URL: 
-                        <a href="https://btob-page.vercel.app/" target='_blank'>https://btob-page.vercel.app/</a>
+                        <a href="https://kengoiwamoto-portfolio.vercel.app/" target='_blank'>https://kengoiwamoto-portfolio.vercel.app/</a>
                     </p>
                     <div className={styles.workThumb}>
                         <Image src={workImg}></Image>
