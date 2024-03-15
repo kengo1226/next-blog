@@ -10,6 +10,7 @@ import personImg from "../../public/img/person-img.jpg"
 import workImg1 from "../../public/img/works1.jpg"
 import workImg2 from "../../public/img/works2.jpg"
 import workImg3 from "../../public/img/works3.jpg"
+import workImg4 from "../../public/img/works4.jpg"
 import {client} from "../lib/client";
 import ConvertDate from "../components/convertdate";
 import { ScrollCom } from "../components/ScrollCom";
@@ -95,11 +96,11 @@ export default function Home({blog}) {
         <div className="works-container">
             <div className="work fadeIn">
                 <div className="work-img">
-                    <Image src={workImg1} />
+                    <Image src={workImg4} />
                 </div>
                 <div className="work-sub">
-                    <p className="work-ttl">台湾観光局WEBサイト</p>
-                    <p className="work-desc">WEBサイト制作<span>｜</span>クライアント</p>
+                    <p className="work-ttl">BtoB WEBサイト</p>
+                    <p className="work-desc">WEBサイト制作<span>｜</span>架空サイト</p>
                 </div>
             </div>
             <div className="work fadeIn">
