@@ -23,6 +23,60 @@
     height: auto;
 }
 
+/* ======== 個別ページ ======== */
+.workDetail {
+    margin-top: 7.5rem;
+}
+
+.workTtl {
+    font-size: 3.4rem;
+    margin-bottom: 3rem;
+}
+
+.workContent {
+    margin-top: 5.5rem;
+}
+
+.workLink {
+    font-size: 1.4rem;
+    margin-bottom: 1.6rem;
+}
+
+.workLink a {
+    color: #333;
+    text-decoration: underline;
+    display: inline-block;
+    margin-left: 0.6rem;
+}
+
+.workRow {
+    display: flex;
+    margin-bottom: 5.5rem;
+}
+
+.workRow p {
+    font-size: 1.6rem;
+}
+
+.workRow p:first-of-type {
+    width: 30%;
+    font-weight: bold;
+}
+
+.workRow p:last-of-type {
+    width: 70%;
+}
+
+.workDesign {
+    margin-top: 10rem;
+}
+
+.workDesign p {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2.2rem;
+}
+
 /* ======== スマホ ======== */
 @media screen and (max-width: 768px) {
     .productionContainer {
@@ -33,4 +87,42 @@
         width: 100%;
         margin-bottom: 5rem;
     }
+
+
+    /* ======= 個別ページ ====== */
+    .workDetail {
+        margin-top: 3rem;
+    }
+
+    .workTtl {
+        font-size: 2.4rem;
+    }
+
+    .workRow {
+        display: block;
+        margin-bottom: 3.5rem;
+    }
+    
+    .workRow p {
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+    }
+    
+    .workRow p:first-of-type {
+        width: 100%;
+    }
+    
+    .workRow p:last-of-type {
+        width: 100%;
+    }
+
+    .workDesign {
+        margin-top: 7rem;
+    }
+
+    .workDesign p {
+        font-size: 1.6rem;
+    }
 }
+
+

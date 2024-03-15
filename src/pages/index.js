@@ -97,7 +97,9 @@ export default function Home({blog}) {
         <div className="works-container">
             <div className="work fadeIn">
                 <div className="work-img">
-                    <Image src={workImg4} />
+                    <Link href="works/work1">
+                      <Image src={workImg4} />
+                    </Link>
                 </div>
                 <div className="work-sub">
                     <p className="work-ttl">BtoB WEBサイト</p>
@@ -106,7 +108,9 @@ export default function Home({blog}) {
             </div>
             <div className="work fadeIn">
                 <div className="work-img">
-                    <Image src={workImg5} />
+                    <Link href="works/work2">
+                      <Image src={workImg5} />
+                    </Link>
                 </div>
                 <div className="work-sub">
                     <p className="work-ttl">企業サイト</p>
@@ -115,7 +119,9 @@ export default function Home({blog}) {
             </div>
             <div className="work fadeIn">
                 <div className="work-img">
-                    <Image src={workImg3} />
+                    <Link href="works/work3">
+                      <Image src={workImg3} />
+                    </Link>
                 </div>
                 <div className="work-sub">
                     <p className="work-ttl">ポートフォリオサイト</p>
