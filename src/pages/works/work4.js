@@ -18,7 +18,7 @@ function work3() {
                 <div className={styles.workWrapper}>
                     <p className={styles.workLink}>
                         URL: 
-                        <a href="https://kengoiwamoto-portfolio.vercel.app/" target='_blank'>https://kengoiwamoto-portfolio.vercel.app/</a>
+                        <a href="http://sample.easy-trip-more.com/" target='_blank'>http://sample.easy-trip-more.com/</a>
                     </p>
                     <div className={styles.workThumb}>
                         <Image src={workImg}></Image>

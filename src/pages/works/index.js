@@ -8,6 +8,7 @@ import worksImg from "../../../public/img/works-img.jpg"
 import workImg3 from "../../../public/img/works3.jpg"
 import workImg4 from "../../../public/img/works4.jpg"
 import workImg5 from "../../../public/img/works5.jpg"
+import workImg6 from "../../../public/img/works6.jpg"
 
 function index() {
     return (
@@ -69,6 +70,17 @@ function index() {
                         <div className="work-sub">
                             <p className="work-ttl">ポートフォリオサイト</p>
                             <p className="work-desc">WEBサイト制作<span>｜</span>自主制作</p>
+                        </div>
+                    </div>
+                    <div className={styles.work}>
+                        <div className={styles.workImg}>
+                            <Link href="works/work4">
+                                <Image src={workImg6} />
+                            </Link>
+                        </div>
+                        <div className="work-sub">
+                            <p className="work-ttl">架空工務店HP</p>
+                            <p className="work-desc">WordPress構築<span>｜</span>自主制作</p>
                         </div>
                     </div>
                 </div>
