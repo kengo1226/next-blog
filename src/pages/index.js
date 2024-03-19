@@ -12,6 +12,7 @@ import workImg2 from "../../public/img/works2.jpg"
 import workImg3 from "../../public/img/works3.jpg"
 import workImg4 from "../../public/img/works4.jpg"
 import workImg5 from "../../public/img/works5.jpg"
+import workImg6 from "../../public/img/works6.jpg"
 import {client} from "../lib/client";
 import ConvertDate from "../components/convertdate";
 import { ScrollCom } from "../components/ScrollCom";
@@ -126,6 +127,17 @@ export default function Home({blog}) {
                 <div className="work-sub">
                     <p className="work-ttl">ポートフォリオサイト</p>
                     <p className="work-desc">WEBサイト制作<span>｜</span>自主制作</p>
+                </div>
+            </div>
+            <div className="work fadeIn">
+                <div className="work-img">
+                    <Link href="works/work4">
+                      <Image src={workImg6} />
+                    </Link>
+                </div>
+                <div className="work-sub">
+                    <p className="work-ttl">架空工務店HP</p>
+                    <p className="work-desc">WordPress構築<span>｜</span>自主制作</p>
                 </div>
             </div>
         </div>
