@@ -32,7 +32,7 @@ function blog({blog}) {
           <div className={styles.blogWrapper}>
             <div className={styles.blogInner}>
               <ul>
-                {blog.map(({id, title, publishDate, category, eyecatch}) => (
+                {blog.map(({id, title, publishedAt, category, eyecatch}) => (
                   <li key={blog.id}>
                     <Link href={`blog/${id}`}>
                     <div className="blogImgWrapper">
@@ -42,7 +42,7 @@ function blog({blog}) {
                       />
                     </div>
                       <div className={styles.blogContentRight}>
-                        <ConvertDate convertDate={publishDate}></ConvertDate>
+                        <ConvertDate convertDate={publishedAt}></ConvertDate>
                         <span>{category && category.name}</span>
                         <p>{title}</p>
                       </div>

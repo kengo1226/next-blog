@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 import { Noto_Sans_JP } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import bgTop from "../../public/img/bg-top.jpg"
-import personImg from "../../public/img/person-img.jpg"
+import personImg from "../../public/img/about-img-portfolio.jpg"
 import workImg1 from "../../public/img/works1.jpg"
 import workImg2 from "../../public/img/works2.jpg"
 import workImg3 from "../../public/img/works3.jpg"
