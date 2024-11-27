@@ -13,6 +13,9 @@ import workImg6 from "../../../public/img/banner-img.jpg"
 function index() {
     return (
         <>
+        <Head>
+            <title>制作実績｜岩本謙吾ポートフォリオ</title>
+        </Head>
         <Layout>
 
         <section id="mv" class="sub-mv">

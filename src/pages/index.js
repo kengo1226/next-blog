@@ -44,7 +44,7 @@ export default function Home({blog}) {
     <>
 
             <Head>
-                <title>タイトル</title>
+                <title>トップ｜岩本謙吾ポートフォリオ</title>
                 <link rel="icon" href="/favicon.ico" />
                 <meta
                 name="description"

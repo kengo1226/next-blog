@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from "next/head";
 import Layout from "../components/layout";
 import styles from "../styles/blog.module.css";
 import Link from "next/link";
@@ -23,6 +24,9 @@ export const getStaticProps = async () => {
 function blog({blog}) {
   return (
     <>
+    <Head>
+        <title>ブログ｜岩本謙吾ポートフォリオ</title>
+    </Head>
     <Layout>
     <main>
       <div className={styles.blogHeader}>

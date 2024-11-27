@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from "next/head";
 import Layout from "../components/layout";
 import styles from "../styles/about.module.css";
 import Link from "next/link";
@@ -8,6 +9,9 @@ import aboutImg from "../../public/img/about-img.jpg"
 function about() {
 return (
     <>
+    <Head>
+        <title>プロフィール｜岩本謙吾ポートフォリオ</title>
+    </Head>
     <Layout>
     <section id="mv" className="sub-mv">
         <div className="main-visual">
