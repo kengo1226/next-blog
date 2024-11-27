@@ -4,7 +4,7 @@ import Link from "next/link";
 import Layout from "../../components/layout";
 import styles from "../../styles/works.module.css";
 import Image from "next/image";
-import workImg from "../../../public/img/works6.jpg"
+import workImg from "../../../public/img/img_bnr.jpg"
 import workDesign from "../../../public/img/work-design-4.jpg"
 
 function work3() {
@@ -14,12 +14,8 @@ function work3() {
 
         <section className={styles.workDetail}>
             <div className="container-small">
-                <h2 className={styles.workTtl}>架空工務店HP</h2>
+                <h2 className={styles.workTtl}>バナー作成</h2>
                 <div className={styles.workWrapper}>
-                    <p className={styles.workLink}>
-                        URL: 
-                        <a href="http://sample.easy-trip-more.com/" target='_blank'>http://sample.easy-trip-more.com/</a>
-                    </p>
                     <div className={styles.workThumb}>
                         <Image src={workImg}></Image>
                     </div>
@@ -30,23 +26,19 @@ function work3() {
                         </div>
                         <div className={styles.workRow}>
                             <p>制作期間</p>
-                            <p>10日</p>
+                            <p>1日</p>
                         </div>
                         <div className={styles.workRow}>
                             <p>ツール・技術スタック</p>
-                            <p>Figma / HTML / CSS / JavaScript / WordPress構築</p>
+                            <p>Photoshop</p>
                         </div>
                         <div className={styles.workRow}>
                             <p>ターゲット</p>
-                            <p>企業、顧客</p>
+                            <p>顧客</p>
                         </div>
                         <div className={styles.workRow}>
                             <p>制作において</p>
-                            <p>WordPressで架空の工務店のHPを制作しました。ブログ機能、カスタム投稿機能で施工実績を投稿できるようにしました。また、採用情報のテキストは管理画面からも変更できるようにしています。※現在製作途中のため表示が少し崩れる場合がります。</p>
-                        </div>
-                        <div className={styles.workDesign}>
-                            <p>全体図</p>
-                            <Image src={workDesign} width={1000} height={2619}></Image>
+                            <p>旅行会社のイベントを想定してバナーを制作しました。「夏旅」を想定して水色とオレンジ系の色を使用しました。</p>
                         </div>
                     </div>
                 </div>

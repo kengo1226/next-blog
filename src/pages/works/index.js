@@ -8,7 +8,7 @@ import worksImg from "../../../public/img/works-img.jpg"
 import workImg3 from "../../../public/img/works3.jpg"
 import workImg4 from "../../../public/img/works4.jpg"
 import workImg5 from "../../../public/img/works5.jpg"
-import workImg6 from "../../../public/img/works6.jpg"
+import workImg6 from "../../../public/img/img_bnr.jpg"
 
 function index() {
     return (
@@ -79,8 +79,8 @@ function index() {
                             </Link>
                         </div>
                         <div className="work-sub">
-                            <p className="work-ttl">架空工務店HP</p>
-                            <p className="work-desc">WordPress構築<span>｜</span>自主制作</p>
+                            <p className="work-ttl">バナー作成</p>
+                            <p className="work-desc">Photoshopバナー作成<span>｜</span>自主制作</p>
                         </div>
                     </div>
                 </div>
