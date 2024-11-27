@@ -12,7 +12,7 @@ import workImg2 from "../../public/img/works2.jpg"
 import workImg3 from "../../public/img/works3.jpg"
 import workImg4 from "../../public/img/works4.jpg"
 import workImg5 from "../../public/img/works5.jpg"
-import workImg6 from "../../public/img/img_bnr.jpg"
+import workImg6 from "../../public/img/banner-img.jpg"
 import {client} from "../lib/client";
 import ConvertDate from "../components/convertdate";
 import { ScrollCom } from "../components/ScrollCom";
@@ -69,11 +69,9 @@ export default function Home({blog}) {
             <p className="copy-vertical">
                 <span>岩本謙吾です。</span>
                 <br />
-                <span>サイト制作承ります。</span>
+                <span>ウェブ制作を行っています。</span>
                 <br />
-                <span>つながりを作る存在に。</span>
-                <br />
-                <span>新たなページを一緒に。</span>
+                <span>フロントをメインにお仕事をしています。</span>
             </p>
         </div>
     </section>
@@ -95,10 +93,9 @@ export default function Home({blog}) {
           </div>
             <div className="about-content">
               <ScrollCom>
-                <h2>WEBを通じて<br />
-                    新たな繋がりを作る。</h2>
-                <p>はじめまして、岩本謙吾です。<br />
-                    WEB制作との出会いは19歳の頃、ブログでのCSS装飾がきっかけでした。独学でHTML、CSSを学び、その後はセブ島のIT留学でWEBデザインコースを受講しました。IT留学後は都内のWEB制作会社でフロントエンドエンジニアとしてお仕事をしています。コーディングもデザインもどっちも好き。毎日新たなコーディング技術やデザインから刺激を受けながら生活しています。</p>
+                <h2>はじめまして。<br />
+                    岩本謙吾です。</h2>
+                <p>WEB制作との出会いは19歳の頃、ブログでのCSS装飾がきっかけでした。独学でHTML、CSSを学び、その後はセブ島のIT留学でWEBデザインコースを受講しました。IT留学後は都内のWEB制作会社でフロントエンドエンジニア兼ディレクターとしてお仕事をしています。コーディングもデザインもどっちも好き。毎日新たなコーディング技術やデザインから刺激を受けながら生活しています。</p>
                 <Link href="/about" className="primary-btn">プロフィール</Link>
               </ScrollCom>
             </div>

@@ -8,7 +8,7 @@ import worksImg from "../../../public/img/works-img.jpg"
 import workImg3 from "../../../public/img/works3.jpg"
 import workImg4 from "../../../public/img/works4.jpg"
 import workImg5 from "../../../public/img/works5.jpg"
-import workImg6 from "../../../public/img/img_bnr.jpg"
+import workImg6 from "../../../public/img/banner-img.jpg"
 
 function index() {
     return (
