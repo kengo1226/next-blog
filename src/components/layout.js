@@ -6,7 +6,6 @@ import logo from "../../public/img/logo.svg";
 import topImg from "../../public/img/top-img.svg";
 import { Noto_Sans_JP } from "next/font/google";
 
-const name = 'Aozora BLOG';
 export const siteTitle = "岩本謙吾ポートフォリオ";
 
 const notoSansJP = Noto_Sans_JP({ 
@@ -46,7 +45,7 @@ export default function Layout({ children}) {
 
     return(
         <>
-            <Head>
+            {/* <Head>
                 <title>{siteTitle}</title>
                 <link rel="icon" href="/favicon.ico" />
                 <meta
@@ -55,7 +54,7 @@ export default function Layout({ children}) {
                 />
                 <meta name="og:title" content={siteTitle} />
                 <meta name="twitter:card" content="summary_large_image" />
-            </Head>
+            </Head> */}
             <header className={`${active ? "show" : ""} ${notoSansJP.className} header`}>
                 <div className="header-container">
                     <Link href="/">
@@ -77,9 +76,6 @@ export default function Layout({ children}) {
                             <li>
                                 <Link href="/blog">ブログ</Link>
                             </li>
-                            <li>
-                                <Link href="/contact">お問い合わせ</Link>
-                            </li>
                         </ul>
                     </nav>
                     <div className="menu-btn" onClick={toggleFunction}>
@@ -96,7 +92,7 @@ export default function Layout({ children}) {
                 <div className="contact-container">
                     <p>Contact</p>
                     <h2>お問い合わせ</h2>
-                    <a href="#" className="contact-btn">お問い合わせはこちら</a>
+                    <a href="mailto:kengo1226size@gmail.com" className="contact-btn">お問い合わせはこちら</a>
                 </div>
             </section>
             <footer className={notoSansJP.className}>
@@ -112,9 +108,6 @@ export default function Layout({ children}) {
                     </li>
                     <li>
                         <Link href="/blog">ブログ</Link>
-                    </li>
-                    <li>
-                        <Link href="/contact">お問い合わせ</Link>
                     </li>
                 </ul>
                 <p>© 2024 Kengo Iwamoto</p>

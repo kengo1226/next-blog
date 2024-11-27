@@ -12,7 +12,7 @@ export default function BlogId({ blog }) {
                 <p>ブログ</p>
             </div>
             <div className={styles.blogContainer}>
-                <ConvertDate convertDate={blog.publishDate}></ConvertDate>
+                <ConvertDate convertDate={blog.publishedAt}></ConvertDate>
                 <span>{blog.category && blog.category.name}</span>
                 <h1 className={styles.heading}>{blog.title}</h1>
                 <div className={styles.blogContent}>

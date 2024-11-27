@@ -42,6 +42,18 @@ export const getStaticProps = async () => {
 export default function Home({blog}) {
   return (
     <>
+
+            <Head>
+                <title>タイトル</title>
+                <link rel="icon" href="/favicon.ico" />
+                <meta
+                name="description"
+                content="都内のWEB制作会社でフロントエンドを担当している岩本謙吾です。デザインとコーディングが好きです。"
+                />
+                <meta name="og:title" content="タイトル" />
+                <meta name="twitter:card" content="summary_large_image" />
+            </Head>
+
     <Layout>
 
     <section id="mv">
@@ -149,7 +161,7 @@ export default function Home({blog}) {
         <div className="blog-container">
           <div className="blog-inner">
             <ul>
-              {blog.map(({id, title, publishDate, category, eyecatch}) => (
+              {blog.map(({id, title, publishedAt, category, eyecatch}) => (
                 <li key={blog.id}>
                   <Link href={`blog/${id}`}>
                     <div className="blogImgWrapper">
@@ -159,7 +171,7 @@ export default function Home({blog}) {
                       />
                     </div>
                     <div className="blog-content-right">
-                      <ConvertDate convertDate={publishDate}></ConvertDate>
+                      <ConvertDate convertDate={publishedAt}></ConvertDate>
                       <span>{category && category.name}</span>
                       <p>{title}</p>
                     </div>
