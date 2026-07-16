@@ -1,20 +1,16 @@
-// import { ReactNode } from "react";
+"use client";
+
 import { useInView } from "react-intersection-observer";
 
-export const FadeAnimation = ({children}) => {
+export const FadeAnimation = ({ children }) => {
+  const { ref, inView } = useInView({
+    rootMargin: "-150px",
+    triggerOnce: true,
+  });
 
-    // const {children} = props;
-
-    const {ref, inView} = useInView({
-        rootMargin: '-150px',
-        triggerOnce: true,
-    });
-
-    return (
-        <div inView={inView} ref={ref}>
-            {children}
-        </div>
-    )
-}
-
-// export default fadeAnimation
+  return (
+    <div inView={inView} ref={ref}>
+      {children}
+    </div>
+  );
+};

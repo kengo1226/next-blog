@@ -1,0 +1,47 @@
+import Link from "next/link";
+import styles from "@/styles/blog.module.css";
+import { client } from "@/lib/client";
+import ConvertDate from "@/components/convertdate";
+
+export const metadata = {
+  title: "ブログ｜岩本謙吾ポートフォリオ",
+};
+
+// こっちで全件のデータを取得＆10件ごとのページネーションを実装
+export default async function Blog() {
+  const data = await client.get({
+    endpoint: "blog",
+    queries: { offset: 0, limit: 100 },
+  });
+  const blog = data.contents;
+
+  return (
+    <main>
+      <div className={styles.blogHeader}>
+        <p>ブログ</p>
+      </div>
+      <section className={styles.blog}>
+        <div className={styles.blogWrapper}>
+          <div className={styles.blogInner}>
+            <ul>
+              {blog.map(({ id, title, publishedAt, category, eyecatch }) => (
+                <li key={id}>
+                  <Link href={`blog/${id}`}>
+                    <div className="blogImgWrapper">
+                      <img src={eyecatch.url} alt="eycatch" />
+                    </div>
+                    <div className={styles.blogContentRight}>
+                      <ConvertDate convertDate={publishedAt}></ConvertDate>
+                      <span>{category && category.name}</span>
+                      <p>{title}</p>
+                    </div>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+  );
+}
